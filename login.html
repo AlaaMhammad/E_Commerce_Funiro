@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://public-frontend-cos.metadl.com/mgx/img/favicon.png" type="image/png">
+    <title>Login - Funiro</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- icon -->
+    <link rel="shortcut icon" href="./img/logo.svg" type="image/x-icon">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./img/logo.svg" alt="logo">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+
+                    <!-- Middle Menu -->
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="javascript:void(0);" id="shopNavLink">Shop</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+
+                    <!-- Icons section with your class names -->
+                    <div class="navbar-icons d-flex align-items-center gap-3">
+
+                        <!-- <div class="search-box">
+                        <input type="text" class="form-control" placeholder="Search for minimalist chair">
+                        <i class="fas fa-search"></i>
+                    </div> -->
+
+                        <a href="login.html" class="icon-link active " id="userIcon">
+                            <i class="far fa-user "></i>
+                        </a>
+                        <a href="#" class="icon-link" id="search">
+                            <i class="fas fa-search"></i>
+                        </a>
+
+                        <a href="wishlist.html" class="icon-link">
+                            <i class="far fa-heart"></i>
+                            <span class="badge-count" id="wishlistCount">0</span>
+                        </a>
+
+                        <a href="cart.html" class="icon-link">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="badge-count" id="cartCount">0</span>
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Login Section -->
+    <section class="login-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-5 col-md-7">
+                    <div class="login-card">
+                        <img src="./img/icon-logo.png" alt="icon-logo" class="hero-icon mx-auto d-block">
+                        <h2 class="text-center mb-4">Welcome Back</h2>
+                        <p class="text-center text-muted mb-4">Login to access your account</p>
+
+                        <!-- Login Form -->
+                        <form id="loginForm" class="auth-form">
+                            <div class="mb-3">
+                                <label for="loginEmail" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="loginEmail" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="loginPassword" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="loginPassword" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100 mb-3">Login</button>
+                            <p class="text-center">
+                                Don't have an account?
+                                <a href="#" id="showRegister" class="text-primary">Register here</a>
+                            </p>
+                        </form>
+
+                        <!-- Register Form (Hidden by default) -->
+                        <form id="registerForm" class="auth-form" style="display: none;">
+                            <div class="mb-3">
+                                <label for="registerName" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="registerName" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="registerEmail" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="registerEmail" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="registerPassword" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="registerPassword" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="registerConfirmPassword" class="form-label">Confirm Password</label>
+                                <input type="password" class="form-control" id="registerConfirmPassword" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100 mb-3">Register</button>
+                            <p class="text-center">
+                                Already have an account?
+                                <a href="#" id="showLogin" class="text-primary">Login here</a>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h3 class="footer-brand">Funiro.</h3>
+                    <address class="footer-address">
+                        Worldwide furniture store since 2020. We sell over 1000+ branded products on our website
+                        <br><br>
+                        Sawojajar Malang, Indonesia
+                        <br><br>
+                        +6289 456 3455
+                        <br><br>
+                        www.funiro.com
+                    </address>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h4 class="footer-title">Menu</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Rooms</a></li>
+                        <li><a href="#">Inspirations</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Terms & Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h4 class="footer-title">Account</h4>
+                    <ul class="footer-links">
+                        <li><a href="login.html">My Account</a></li>
+                        <li><a href="cart.html">Checkout</a></li>
+                        <li><a href="cart.html">My Cart</a></li>
+                        <li><a href="wishlist.html">My Wishlist</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h4 class="footer-title">Stay Connected</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h4 class="footer-title">Stay Updated</h4>
+                    <form class="newsletter-form">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Enter your email">
+                            <button class="btn btn-submit" type="submit">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer> -->
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Auth JS -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/swiper-bundle.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/auth.js"></script>
+</body>
+
+</html>

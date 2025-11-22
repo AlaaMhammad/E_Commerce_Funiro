@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://public-frontend-cos.metadl.com/mgx/img/favicon.png" type="image/png">
+    <title>Contact US</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- icon -->
+    <link rel="shortcut icon" href="./img/logo.svg" type="image/x-icon">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/shop.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./img/logo.svg" alt="logo">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+
+                    <!-- Middle Menu -->
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="javascript:void(0);" id="shopNavLink">Shop</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                    </ul>
+
+                    <!-- Icons section with your class names -->
+                    <div class="navbar-icons d-flex align-items-center gap-3">
+
+                        <!-- <div class="search-box">
+                        <input type="text" class="form-control" placeholder="Search for minimalist chair">
+                        <i class="fas fa-search"></i>
+                    </div> -->
+
+                        <a href="login.html" class="icon-link" id="userIcon">
+                            <i class="far fa-user"></i>
+                        </a>
+                        <a href="#" class="icon-link" id="search">
+                            <i class="fas fa-search"></i>
+                        </a>
+
+                        <a href="wishlist.html" class="icon-link">
+                            <i class="far fa-heart"></i>
+                            <span class="badge-count" id="wishlistCount">0</span>
+                        </a>
+
+                        <a href="cart.html" class="icon-link">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="badge-count" id="cartCount">0</span>
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contact-hero -->
+    <section class="shop-hero">
+        <img src="./img/icon-logo.png" alt="icon-logo" class="hero-icon">
+        <h1 class="hero-title">Contact</h1>
+        <div class="breadcrumb-text">
+            Home <i class="fas fa-chevron-right " style="font-size: 1rem; font-weight: bold;"></i> <span
+                class="active">contact</span>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+
+            <div class="contact-header">
+                <h2>Get In Touch With Us</h2>
+                <p>For More Information About Our Product & Services, Please Feel Free To Drop Us An Email. Our Staff
+                    Always Be There To Help You Out. Do Not Hesitate!</p>
+            </div>
+
+            <div class="row">
+
+                <div class="col-lg-6 mb-5 mb-lg-0">
+
+                    <div class="info-item">
+                        <div class="info-icon"><i class="bi bi-geo-alt"></i></div>
+                        <div class="info-content">
+                            <h5>Address</h5>
+                            <p>236 5th SE Avenue, New</p>
+                            <p>York NY10000, United States</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon"><i class="bi bi-telephone"></i></div>
+                        <div class="info-content">
+                            <h5>Phone</h5>
+                            <span>Mobile: +(84) 546-6789</span>
+                            <span>Hotline: +(84) 456-6789</span>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon"><i class="bi bi-clock"></i></div>
+                        <div class="info-content">
+                            <h5>Working Time</h5>
+                            <span>Monday-Friday: 9:00 - 22:00</span>
+                            <span>Saturday-Sunday: 9:00 - 21:00</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6">
+
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="yourName" class="form-label">Your name</label>
+                            <input type="text" class="form-control" id="yourName" placeholder="Abc" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="emailAddress" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="emailAddress" placeholder="abc@def.com"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" class="form-control" id="subject" placeholder="This is an optional">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Hi! I'd like to ask about"
+                                required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn submit-btn">Submit</button>
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- services-section -->
+    <section class="services-section">
+        <div class="container-xl">
+            <div class="row text-center justify-content-center">
+
+                <div class="col-md-6 col-lg-3 service-item">
+                    <div class="icon-custom icon-t"></div>
+                    <div class="title-icon">
+                        <h5>High Quality</h5>
+                        <p>crafted from top materials</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 service-item">
+                    <div class="icon-custom icon-check-circle"></div>
+                    <div class="title-icon">
+                        <h5>Warranty Protection</h5>
+                        <p>Over 2 years</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 service-item">
+                    <div class="icon-custom icon-shipping-box"></div>
+
+                    <div class="title-icon">
+                        <h5>Free Shipping</h5>
+                        <p>Order over 150 $</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 service-item">
+                    <div class="icon-custom icon-support-headset"></div>
+                    <div class="title-icon">
+                        <h5>24/7 Support</h5>
+                        <p>Dedicated support</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h3 class="footer-brand">Funiro.</h3>
+                    <address class="footer-address">
+                        Worldwide furniture store since 2020. We sell over 1000+ branded products on our website
+                        <br><br>
+                        Sawojajar Malang, Indonesia
+                        <br><br>
+                        +6289 456 3455
+                        <br><br>
+                        www.funiro.com
+                    </address>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h4 class="footer-title">Menu</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="javascript:void(0);" id="shopNavLink">Shop</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="contact.html">Contact US</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h4 class="footer-title">Account</h4>
+                    <ul class="footer-links">
+                        <li><a href="login.html">My Account</a></li>
+                        <li><a href="cart.html">My Cart</a></li>
+                        <li><a href="wishlist.html">My Wishlist</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h4 class="footer-title">Stay Connected</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h4 class="footer-title">Stay Updated</h4>
+                    <form class="newsletter-form">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Enter your email">
+                            <button class="btn btn-submit" type="submit">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-bottom text-center py-0 mb-0">
+                <!-- js year now -->
+                <p class="d-inline-block my-auto">
+                    <script>document.write(new Date().getFullYear());</script> &copy; Funiro. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JS -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/swiper-bundle.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/auth.js"></script>
+    <script src="./js/product.js"></script>
+    <script src="./js/filter.js"></script>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function (event) {
+            event.preventDefault(); // منع الإرسال الافتراضي للصفحة
+            // إظهار رسالة تفاعلية بسيطة للمستخدم
+            alert('Thank you! Your message has been sent successfully.');
+
+            this.reset();
+        });
+    </script>
+</body>
+
+</html>

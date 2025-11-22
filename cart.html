@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://public-frontend-cos.metadl.com/mgx/img/favicon.png" type="image/png">
+    <title>Shopping Cart - Funiro</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- icon -->
+    <link rel="shortcut icon" href="./img/logo.svg" type="image/x-icon">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./img/logo.svg" alt="logo">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+
+                    <!-- Middle Menu -->
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="javascript:void(0);" id="shopNavLink">Shop</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link " href="contact.html">Contact</a></li>
+                    </ul>
+
+                    <!-- Icons section with your class names -->
+                    <div class="navbar-icons d-flex align-items-center gap-3">
+
+                        <!-- <div class="search-box">
+                        <input type="text" class="form-control" placeholder="Search for minimalist chair">
+                        <i class="fas fa-search"></i>
+                    </div> -->
+
+                        <a href="login.html" class="icon-link" id="userIcon">
+                            <i class="far fa-user"></i>
+                        </a>
+                        <a href="#" class="icon-link" id="search">
+                            <i class="fas fa-search"></i>
+                        </a>
+
+                        <a href="wishlist.html" class="icon-link">
+                            <i class="far fa-heart"></i>
+                            <span class="badge-count" id="wishlistCount">0</span>
+                        </a>
+
+                        <a href="cart.html" class="icon-link active">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="badge-count" id="cartCount">0</span>
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Cart Section -->
+    <section class="cart-section">
+        <div class="container">
+            <h2 class="page-title">Shopping Cart</h2>
+
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="cart-items" id="cartItems">
+                        <!-- Cart items will be dynamically inserted here -->
+                    </div>
+
+                    <div class="empty-cart" id="emptyCart" style="display: none;">
+                        <i class="fas fa-shopping-cart"></i>
+                        <h3>Your cart is empty</h3>
+                        <p>Add some products to get started!</p>
+                        <a href="index.html" class="btn btn-primary">Continue Shopping</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="cart-summary">
+                        <h3>Order Summary</h3>
+                        <div class="summary-row">
+                            <span>Subtotal</span>
+                            <span id="subtotal">Rp 0</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Shipping</span>
+                            <span id="shipping">Free</span>
+                        </div>
+                        <div class="summary-row total">
+                            <span>Total</span>
+                            <span id="total">Rp 0</span>
+                        </div>
+                        <button class="btn btn-primary w-100" id="checkoutBtn">Proceed to Checkout</button>
+                        <a href="index.html" class="btn btn-outline-primary w-100 mt-2">Continue Shopping</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h3 class="footer-brand">Funiro.</h3>
+                    <address class="footer-address">
+                        Worldwide furniture store since 2020. We sell over 1000+ branded products on our website
+                        <br><br>
+                        Sawojajar Malang, Indonesia
+                        <br><br>
+                        +6289 456 3455
+                        <br><br>
+                        www.funiro.com
+                    </address>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h4 class="footer-title">Menu</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="javascript:void(0);" id="shopNavLink">Shop</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="contact.html">Contact US</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h4 class="footer-title">Account</h4>
+                    <ul class="footer-links">
+                        <li><a href="login.html">My Account</a></li>
+                        <li><a href="cart.html">My Cart</a></li>
+                        <li><a href="wishlist.html">My Wishlist</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h4 class="footer-title">Stay Connected</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h4 class="footer-title">Stay Updated</h4>
+                    <form class="newsletter-form">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Enter your email">
+                            <button class="btn btn-submit" type="submit">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-bottom text-center py-0 mb-0">
+                <!-- js year now -->
+                <p class="d-inline-block my-auto">
+                    <script>document.write(new Date().getFullYear());</script> &copy; Funiro. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Cart JS -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/swiper-bundle.js"></script>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <script src="./js/script.js"></script>
+    <script src="./js/cart.js"></script>
+</body>
+
+</html>

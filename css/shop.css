@@ -1,0 +1,296 @@
+/* الألوان والخطوط الأساسية */
+:root {
+    --furniro-primary: #B88E2F;
+    /* اللون الذهبي/البني للعلامة التجارية */
+    --light-bg: #FFF3E3;
+    /* لون خلفية شريط الفرز */
+    --text-dark: #333333;
+    --text-muted: #9F9F9F;
+
+    --furniro-primary: #B88E2F;
+    /* اللون الذهبي/البني للعلامة التجارية */
+    --light-bg: #FFF3E3;
+    /* لون خلفية قسم الخدمات */
+    --text-dark: #333333;
+    --text-muted: #9F9F9F;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+/* --- 1. شريط التنقل (Navbar) --- */
+.furniro-navbar {
+    padding: 1.5rem 0;
+    background-color: white;
+}
+
+.furniro-logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.furniro-logo span {
+    /* لتمييز أيقونة الشعار */
+    color: var(--furniro-primary);
+}
+
+.nav-link {
+    color: var(--text-dark) !important;
+    font-weight: 500;
+    margin: 0 1rem;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--furniro-primary) !important;
+}
+
+.navbar-icons .bi {
+    font-size: 1.4rem;
+    color: var(--text-dark);
+    margin-left: 1.5rem;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.navbar-icons .bi:hover {
+    color: var(--furniro-primary);
+}
+
+/* --- 2. قسم العنوان الرئيسي (Hero Section) --- */
+.shop-hero {
+    background-image: url('../img/shop/Rectangle.svg');
+    /* استبدل برابط صورتك */
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    /* ارتفاع القسم */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+/* إضافة طبقة تظليل خفيفة لجعل النص مقروءًا */
+.shop-hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.4);
+    /* تظليل أبيض/شفاف كما في الصورة */
+    z-index: -1;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    /* النص باللون الأسود/الداكن */
+    margin-bottom: 0.5rem;
+}
+
+.breadcrumb-text {
+    color: var(--text-dark);
+    font-weight: 500;
+}
+
+.breadcrumb-text .active {
+    color: var(--furniro-primary);
+}
+
+/* --- 3. شريط الفرز والتصفية (Filter/Sort Bar) --- */
+.filter-bar {
+    background-color: var(--light-bg);
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #E8E8E8;
+}
+
+.filter-item {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+.filter-item .bi {
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+}
+
+.filter-controls {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    /* المسافة بين عناصر الفرز */
+}
+
+.filter-controls label {
+    color: var(--text-dark);
+    font-weight: 500;
+}
+
+.filter-value {
+    border: none;
+    padding: 0.5rem 1rem;
+    background-color: white;
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+.default-select {
+    background-color: white;
+    border: 1px solid #ccc;
+    /* إضافة حدود لتظهيره كزر */
+    padding: 0.5rem 1.5rem;
+}
+
+
+
+/* --- 1. ترقيم الصفحات (Pagination) --- */
+.custom-pagination {
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0;
+}
+
+.page-item .page-link {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px !important;
+    /* شكل مربع بزوايا دائرية */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0.5rem;
+    font-weight: 500;
+    transition: background-color 0.3s;
+    border: none;
+}
+
+/* تنسيق الأرقام غير النشطة و زر Next */
+.custom-pagination .page-link {
+    background-color: var(--light-bg);
+    color: var(--text-dark);
+}
+
+/* تنسيق الصفحة النشطة (الخلفية الذهبية) */
+.custom-pagination .page-item.active .page-link {
+    background-color: var(--furniro-primary);
+    color: #fff;
+}
+
+/* تنسيق زر Next */
+.custom-pagination .page-link.next-btn {
+    background-color: var(--light-bg);
+    color: var(--text-dark);
+    width: 80px;
+    /* لجعله أعرض */
+}
+
+.custom-pagination .page-link:hover:not(.active) {
+    background-color: #f0e6d6;
+}
+
+
+/* --- 2. قسم ميزات الخدمة (Features/Services) --- */
+.services-section {
+    background-color: var(--light-bg);
+    padding: 4rem 0;
+}
+
+.service-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    text-align: center;
+    padding: 1rem;
+}
+
+.service-icon img,
+.service-icon .bi {
+    width: 40px;
+    height: 40px;
+    font-size: 2.5rem;
+    color: var(--text-dark);
+    margin-bottom: 0.75rem;
+}
+
+/* ضبط الأيقونات لتكون شبيهة بالصورة */
+.icon-trophy {
+    /* استخدام أيقونة كأس لـ High Quality */
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' fill='%23333' viewBox='0 0 16 16'%3E%3Cpath d='M8 12.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5Zm-.5-3.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7Zm-.5-3.5a.5.5 0 0 1 0 1h7a.5.5 0 0 1 0-1h-7Z'/%3E%3Cpath d='M5.5 1.5A3.5 3.5 0 0 1 9 5v.45a.5.5 0 0 0 .2.4l1.9.9a.5.5 0 0 1 .3.4V7a.5.5 0 0 1-.5.5h-1a.5.5 0 0 0 0 1h1a.5.5 0 0 1 .5.5v.75a.5.5 0 0 1-.3.4l-1.9.9a.5.5 0 0 0-.2.4V11a3.5 3.5 0 1 1-7 0V6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 0 0-1H1.5a.5.5 0 0 1-.5-.5V3a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V1.5Z'/%3E%3C/svg%3E");
+}
+
+.icon-check {
+    /* استخدام أيقونة علامة صح لـ Warranty */
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' fill='%23333' viewBox='0 0 16 16'%3E%3Cpath d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16'/%3E%3Cpath d='M10.97 4.97a.235.235 0 0 0-.02-.02L7.382 8.76l-1.964-1.965a.5.5 0 0 0-.708.708l2.5 2.5a.5.5 0 0 0 .708 0l4.25-4.5a.5.5 0 0 0-.728-.672L8 9.293z'/%3E%3C/svg%3E");
+}
+
+.icon-shipping {
+    /* استخدام أيقونة شحن لـ Free Shipping */
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' fill='%23333' viewBox='0 0 16 16'%3E%3Cpath d='M3.854 5.354a.5.5 0 0 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L1.707 8l2.147-2.146z'/%3E%3Cpath d='M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0M1 8a7 7 0 1 1 14 0A7 7 0 0 1 1 8'/%3E%3Cpath d='M12.146 8.354a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1h5.793l-2.147-2.146a.5.5 0 0 1 .708-.708l3 3z'/%3E%3C/svg%3E");
+}
+
+.icon-support {
+    /* استخدام أيقونة سماعة رأس لـ Support */
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' fill='%23333' viewBox='0 0 16 16'%3E%3Cpath d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16'/%3E%3Cpath d='M10.97 4.97a.235.235 0 0 0-.02-.02L7.382 8.76l-1.964-1.965a.5.5 0 0 0-.708.708l2.5 2.5a.5.5 0 0 0 .708 0l4.25-4.5a.5.5 0 0 0-.728-.672L8 9.293z'/%3E%3C/svg%3E");
+}
+
+
+.service-item h5 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 0.25rem;
+}
+
+.service-item p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 0;
+}
+
+/* تعديل الأيقونات للتمثيل الدقيق (باستخدام صور SVG مضمنة لتقليد الرسم اليدوي في الصورة) */
+.icon-custom {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 0.75rem;
+    background-size: contain;
+    /* توفير مساحة للأيقونات المخصصة */
+}
+
+/* لتوفير أيقونات مشابهة للرسم اليدوي (هذه أكواد SVG مبسطة وليست أيقونات Bootstrap) */
+.icon-t {
+    background-image: url('../img/shop/icon1.svg');
+}
+
+.icon-check-circle {
+    background-image: url('../img/shop/icon2.svg');
+}
+
+.icon-shipping-box {
+    background-image: url('../img/shop/shipping.svg');
+}
+
+.icon-support-headset {
+    background-image: url('../img/shop/customer-support.svg');
+}
+
+.title-icon{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}

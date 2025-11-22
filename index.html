@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://public-frontend-cos.metadl.com/mgx/img/favicon.png" type="image/png">
+    <title>Funiro</title>
+
+    <!-- Bootstrap CSS -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- icon -->
+    <link rel="shortcut icon" href="./img/logo.svg" type="image/x-icon">
+
+    <!-- Custom CSS -->
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header sticky-top shadow">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="./img/logo.svg" alt="logo">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+
+                    <!-- Middle Menu -->
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="javascript:void(0);" id="shopNavLink">Shop</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+
+                    <!-- Icons section with your class names -->
+                    <div class="navbar-icons d-flex align-items-center gap-3">
+
+
+                        <a href="login.html" class="icon-link" id="userIcon">
+                            <i class="far fa-user"></i>
+                        </a>
+                        <a href="#" class="icon-link" id="search">
+                            <i class="fas fa-search"></i>
+                        </a>
+
+                        <a href="wishlist.html" class="icon-link">
+                            <i class="far fa-heart"></i>
+                            <span class="badge-count" id="wishlistCount">0</span>
+                        </a>
+
+                        <a href="cart.html" class="icon-link">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="badge-count" id="cartCount">0</span>
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- home -->
+    <section class="home-section mb-5 mt-0" id="home">
+        <div class="container">
+            <div class="home-wrapper">
+
+                <div class="home-content-box mt-5 mt-md-auto pt-5 pt-md-0" data-aos="fade-left" data-aos-delay="500">
+                    <div class="home-content">
+                        <span class="home-label">NEW ARRIVAL</span>
+                        <h1 class="home-title">Discover Our New Collection</h1>
+                        <p class="home-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                            tellus, luctus nec ullamcorper mattis.</p>
+                        <a href="#shop" class="btn btn-home">BUY NOW</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- browse-section -->
+    <section class="browse-section py-5" id="browse">
+        <div class="container">
+            <div class="browse-header text-center mb-5" data-aos="fade-up">
+                <h2 class="browse-title">Browse The Range</h2>
+                <p class="browse-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="browse-card">
+                        <img src="./img/browse1.svg" alt="Dining">
+                        <h4 class="browse-name">Dining</h4>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="browse-card">
+                        <img src="./img/browse2.svg" alt="Living">
+                        <h4 class="browse-name">Living</h4>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="browse-card">
+                        <img src="./img/browse3.svg" alt="Bedroom">
+                        <h4 class="browse-name">Bedroom</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- products-section  -->
+    <section class="products-section py-5" id="shop">
+        <div class="container">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <h2>Our Products</h2>
+            </div>
+
+            <div class="row g-4 product-grid">
+
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-product-id="1">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./img/products/Syltherine.svg" alt="Syltherine">
+                            <span class="badge-sale">-30%</span>
+                            <div class="product-overlay">
+                                <button class="btn btn-overlay add-to-cart-btn" data-product-id="1">Add to cart</button>
+                                <div class="overlay-actions">
+                                    <a href="#"><i class="fas fa-share-alt"></i> Share</a>
+                                    <a href="#"><i class="fas fa-exchange-alt"></i> Compare</a>
+                                    <a href="#" class="add-to-wishlist-btn" data-product-id="1">
+                                        <i class="far fa-heart"></i> Like
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h5 class="product-name">Syltherine</h5>
+                            <p class="product-desc">Stylish cafe chair</p>
+                            <div class="product-price">
+                                <span class="price-current">Rp 2.500.000</span>
+                                <span class="price-old">Rp 3.500.000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100" data-product-id="2">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./img/products/Leviosa.svg" alt="Leviosa">
+                            <div class="product-overlay">
+                                <button class="btn btn-overlay add-to-cart-btn" data-product-id="2">Add to cart</button>
+                                <div class="overlay-actions">
+                                    <a href="#"><i class="fas fa-share-alt"></i> Share</a>
+                                    <a href="#"><i class="fas fa-exchange-alt"></i> Compare</a>
+                                    <a href="#" class="add-to-wishlist-btn" data-product-id="2"><i
+                                            class="far fa-heart"></i> Like</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h5 class="product-name">Leviosa</h5>
+                            <p class="product-desc">Stylish cafe chair</p>
+                            <div class="product-price">
+                                <span class="price-current">Rp 2.500.000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200" data-product-id="3">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./img/products/Lolito.svg" alt="Lolito">
+                            <span class="badge-sale">-50%</span>
+                            <div class="product-overlay">
+                                <button class="btn btn-overlay add-to-cart-btn" data-product-id="3">Add to cart</button>
+                                <div class="overlay-actions">
+                                    <a href="#"><i class="fas fa-share-alt"></i> Share</a>
+                                    <a href="#"><i class="fas fa-exchange-alt"></i> Compare</a>
+                                    <a href="#" class="add-to-wishlist-btn" data-product-id="3"><i
+                                            class="far fa-heart"></i> Like</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h5 class="product-name">Lolito</h5>
+                            <p class="product-desc">Luxury big sofa</p>
+                            <div class="product-price">
+                                <span class="price-current">Rp 7.000.000</span>
+                                <span class="price-old">Rp 14.000.000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300" data-product-id="4">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./img/products/Respira.svg" alt="Respira">
+                            <span class="badge-new">New</span>
+                            <div class="product-overlay">
+                                <button class="btn btn-overlay add-to-cart-btn" data-product-id="4">Add to cart</button>
+                                <div class="overlay-actions">
+                                    <a href="#"><i class="fas fa-share-alt"></i> Share</a>
+                                    <a href="#"><i class="fas fa-exchange-alt"></i> Compare</a>
+                                    <a href="#" class="add-to-wishlist-btn" data-product-id="4"><i
+                                            class="far fa-heart"></i> Like</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h5 class="product-name">Respira</h5>
+                            <p class="product-desc">Outdoor bar table and stool</p>
+                            <div class="product-price">
+                                <span class="price-current">Rp 500.000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-product-id="5">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./img/products/Grifo.svg" alt="Grifo">
+                            <div class="product-overlay">
+                                <button class="btn btn-overlay add-to-cart-btn" data-product-id="5">Add to cart</button>
+                                <div class="overlay-actions">
+                                    <a href="#"><i class="fas fa-share-alt"></i> Share</a>
+                                    <a href="#"><i class="fas fa-exchange-alt"></i> Compare</a>
+                                    <a href="#" class="add-to-wishlist-btn" data-product-id="5"><i
+                                            class="far fa-heart"></i> Like</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h5 class="product-name">Grifo</h5>
+                            <p class="product-desc">Night lamp</p>
+                            <div class="product-price">
+                                <span class="price-current">Rp 1.500.000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100" data-product-id="6">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./img/products/Muggo.svg" alt="Muggo">
+                            <span class="badge-new">New</span>
+                            <div class="product-overlay">
+                                <button class="btn btn-overlay add-to-cart-btn" data-product-id="6">Add to cart</button>
+                                <div class="overlay-actions">
+                                    <a href="#"><i class="fas fa-share-alt"></i> Share</a>
+                                    <a href="#"><i class="fas fa-exchange-alt"></i> Compare</a>
+                                    <a href="#" class="add-to-wishlist-btn" data-product-id="6"><i
+                                            class="far fa-heart"></i> Like</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h5 class="product-name">Muggo</h5>
+                            <p class="product-desc">Small mug</p>
+                            <div class="product-price">
+                                <span class="price-current">Rp 150.000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200" data-product-id="7">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./img/products/Pingky.svg" alt="Pingky">
+                            <span class="badge-sale">-50%</span>
+                            <div class="product-overlay">
+                                <button class="btn btn-overlay add-to-cart-btn" data-product-id="7">Add to cart</button>
+                                <div class="overlay-actions">
+                                    <a href="#"><i class="fas fa-share-alt"></i> Share</a>
+                                    <a href="#"><i class="fas fa-exchange-alt"></i> Compare</a>
+                                    <a href="#" class="add-to-wishlist-btn" data-product-id="7"><i
+                                            class="far fa-heart"></i> Like</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h5 class="product-name">Pingky</h5>
+                            <p class="product-desc">Cute bed set</p>
+                            <div class="product-price">
+                                <span class="price-current">Rp 7.000.000</span>
+                                <span class="price-old">Rp 14.000.000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300" data-product-id="8">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./img/products/Potty.svg" alt="Potty">
+                            <span class="badge-new">New</span>
+                            <div class="product-overlay">
+                                <button class="btn btn-overlay add-to-cart-btn" data-product-id="8">Add to cart</button>
+                                <div class="overlay-actions">
+                                    <a href="#"><i class="fas fa-share-alt"></i> Share</a>
+                                    <a href="#"><i class="fas fa-exchange-alt"></i> Compare</a>
+                                    <a href="#" class="add-to-wishlist-btn" data-product-id="8"><i
+                                            class="far fa-heart"></i> Like</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h5 class="product-name">Potty</h5>
+                            <p class="product-desc">Minimalist flower pot</p>
+                            <div class="product-price">
+                                <span class="price-current">Rp 500.000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="text-center mt-5" data-aos="fade-up">
+                <a href="javascript:void(0);" class="btn btn-outline-primary btn-show-more" id="showMoreBtn">Show
+                    More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- gallery-section -->
+    <section class="galary ">
+        <div
+            class="container ms-5 ms-md-auto d-md-flex align-items-center justify-content-between g-3 position-relative">
+            <!-- Left Content Section -->
+            <div class="content-left_b mb-2 me-5">
+                <h1 class="main-title_b">50+ Beautiful rooms inspiration</h1>
+                <p class="description_b">Our designer already made a lot of beautiful prototype of rooms that inspire
+                    you
+                </p>
+                <button class="btn-explore_b">Explore More</button>
+            </div>
+
+            <!-- Right Gallery Section -->
+            <div class="gallery-right_b">
+                <!-- Main Fixed Image -->
+                <div class="main-image_b">
+                    <img class="featured-image_b" src="./img/galary/Img1.svg" alt="Bedroom">
+                    <div class="image-info_b">
+                        <div class="room-label_b">
+                            <span class="room-number_b">01</span>
+                            <span class="separator_b">—</span>
+                            <span class="room-type_b">Bed Room</span>
+                        </div>
+                        <div class="d-flex align-items-center ">
+                            <h3 class="room-name_b me-3">Inner Peace</h3>
+                            <button class="arrow-btn_b" id="nextBtn_b">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Side Carousel Section -->
+                <div class="side-carousel-section_b d-none d-md-block">
+                    <!-- Carousel Images -->
+                    <div class="side-carousel_b">
+                        <div class="carousel-track_b">
+                            <!-- Slide 1 -->
+                            <div class="carousel-item_b active_b">
+                                <div class="side-images-bottom_b">
+                                    <div class="side-image_b side-image_b_1 short_b">
+                                        <img src="./img/galary/img2.svg" alt="Kitchen">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slide 2 -->
+                            <div class="carousel-item_b">
+                                <div class="side-images-bottom_b">
+                                    <div class="side-image_b side-image_b_1 short_b">
+                                        <img src="./img/galary/img3.svg" alt="Office">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slide 3 -->
+                            <div class="carousel-item_b">
+                                <div class="side-images-bottom_b">
+                                    <div class="side-image_b side-image_b_1 short_b">
+                                        <img src="img/furniture/img_pag.svg" alt="Lounge">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slide 4 -->
+                            <div class="carousel-item_b">
+                                <div class="side-images-bottom_b">
+                                    <div class="side-image_b side-image_b_1 short_b">
+                                        <img src="./img/galary/Img1.svg" alt="Table">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Controls Section -->
+                    <div class="carousel-controls_b">
+                        <div class="carousel-indicators_b">
+                            <span class="indicator_b active_b" data-index="0"></span>
+                            <span class="indicator_b" data-index="1"></span>
+                            <span class="indicator_b" data-index="2"></span>
+                            <span class="indicator_b" data-index="3"></span>
+                        </div>
+                        <!-- <button class="arrow-btn_b" id="nextBtn_b">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button> -->
+                    </div>
+                </div>
+
+                <button class="top_img" id="nextBtn_b1">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- furniture -->
+    <section class="furniture my-5">
+        <div class="text-center mb-3">
+            <p class="fw-semibold fs-4 text-dark">Share your setup with</p>
+            <h2 class="fw-bold" style="font-size: 40px; color:#3A3A3A;">#FuniroFurniture</h2>
+        </div>
+
+        <div class="funiro-grid">
+            <div class="item item1"><img src="./img/furniture/01.webp" class="img-fluid w-100 h-100 object-cover" />
+            </div>
+            <div class="item item2"><img src="./img/furniture/02.webp" class="img-fluid w-100 h-100 object-cover" />
+            </div>
+            <div class="item item3"><img src="./img/furniture/03.webp" class="img-fluid w-100 h-100 object-cover" />
+            </div>
+            <div class="item item4"><img src="./img/furniture/04.webp" class="img-fluid w-100 h-100 object-cover" />
+            </div>
+            <div class="item item5"><img src="./img/furniture/05.webp" class="img-fluid w-100 h-100 object-cover" />
+            </div>
+            <div class="item item6"><img src="./img/furniture/06.webp" class="img-fluid w-100 h-100 object-cover" />
+            </div>
+            <div class="item item7"><img src="./img/furniture/07.webp" class="img-fluid w-100 h-100 object-cover" />
+            </div>
+            <div class="item item8"><img src="./img/furniture/08.webp" class="img-fluid w-100 h-100 object-cover" />
+            </div>
+            <div class="item item9"><img src="./img/furniture/09.webp" class="img-fluid w-100 h-100 object-cover" />
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h3 class="footer-brand">Funiro.</h3>
+                    <address class="footer-address">
+                        Worldwide furniture store since 2020. We sell over 1000+ branded products on our website
+                        <br><br>
+                        Sawojajar Malang, Indonesia
+                        <br><br>
+                        +6289 456 3455
+                        <br><br>
+                        www.funiro.com
+                    </address>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h4 class="footer-title">Menu</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="javascript:void(0);" id="shopNavLink">Shop</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="contact.html">Contact US</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h4 class="footer-title">Account</h4>
+                    <ul class="footer-links">
+                        <li><a href="login.html">My Account</a></li>
+                        <li><a href="cart.html">My Cart</a></li>
+                        <li><a href="wishlist.html">My Wishlist</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h4 class="footer-title">Stay Connected</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h4 class="footer-title">Stay Updated</h4>
+                    <form class="newsletter-form">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Enter your email">
+                            <button class="btn btn-submit" type="submit">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-bottom text-center py-0 mb-0">
+                <!-- js year now -->
+                <p class="d-inline-block my-auto">
+                    <script>document.write(new Date().getFullYear());</script> &copy; Funiro. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/swiper-bundle.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/auth.js"></script>
+    <script src="./js/product.js"></script>
+    <script>
+        const track = document.querySelector(".carousel-track_b");
+        const slides = Array.from(document.querySelectorAll(".carousel-item_b"));
+        const indicators = document.querySelectorAll(".indicator_b");
+
+        let currentIndex = 0;
+
+        function updateCarousel() {
+            track.style.transform = `translateX(-${currentIndex * 396}px)`;
+            // 372 + 24 gap = 396px
+
+            indicators.forEach(i => i.classList.remove("active_b"));
+            indicators[currentIndex].classList.add("active_b");
+        }
+
+        indicators.forEach(ind => {
+            ind.addEventListener("click", () => {
+                currentIndex = parseInt(ind.dataset.index);
+                updateCarousel();
+            });
+        });
+
+        // زر السهم
+        document.getElementById("nextBtn_b1").addEventListener("click", () => {
+            currentIndex = (currentIndex + 1) % slides.length;
+            updateCarousel();
+        });
+
+
+        // // furnitur scroll effect
+        // const furnitureBody = document.querySelector(".furniture__body");
+        // const furnitureItems = document.querySelector(".furniture__items");
+
+        // window.addEventListener("scroll", () => {
+        //     const speed = 0.2; // سرعة الحركة (غيّرها براحتك)
+        //     const offset = window.scrollY * speed;
+
+        //     furnitureItems.style.transform = `translateX(${-offset}px)`;
+        // });
+
+    </script>
+</body>
+
+</html>

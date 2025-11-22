@@ -887,7 +887,169 @@ img {
     }
 }
 
+/* ====== Responsive ====== */
 
+/* شاشات 1200px وتحت */
+@media (max-width: 1200px) {
+    .content {
+        gap: 40px;
+    }
+
+    .main-image_b {
+        flex: 0 0 350px;
+        height: 500px;
+    }
+
+    .side-carousel-section_b {
+        flex: 0 0 300px;
+    }
+
+    .side-image_b,
+    .side-image_b img {
+        width: 300px !important;
+        height: 420px !important;
+    }
+}
+
+/* شاشات التابلت 992px */
+@media (max-width: 992px) {
+    .content {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .content-left_b {
+        flex: unset;
+        width: 100%;
+    }
+
+    .gallery-right_b {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-image_b,
+    .main-image_b img {
+        width: 100%;
+        max-width: 450px;
+        height: 420px;
+    }
+
+    .side-carousel-section_b {
+        width: 100%;
+        max-width: 450px;
+    }
+
+    .side-image_b,
+    .side-image_b img {
+        width: 100% !important;
+        height: 300px !important;
+    }
+
+    .arrow-btn_b {
+        right: -20px;
+    }
+}
+
+/* شاشات الموبايل الكبيرة 768px */
+@media (max-width: 768px) {
+
+    .galary {
+        padding: 30px 0;
+        margin: 20px 0;
+    }
+
+    .main-title_b {
+        font-size: 32px;
+    }
+
+    .description_b {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+
+    /* إخفاء زر السهم */
+    .top_img {
+        display: none !important;
+    }
+
+    .content {
+        width: 95%;
+    }
+
+    .main-image_b,
+    .main-image_b img {
+        height: 340px;
+    }
+
+    .side-image_b,
+    .side-image_b img {
+        height: 240px !important;
+    }
+
+    .carousel-indicators_b {
+        margin-top: -16%;
+    }
+}
+
+/* شاشات الموبايل الصغيرة 576px */
+@media (max-width: 576px) {
+
+    .main-title_b {
+        font-size: 20px;
+        width: 70%;
+    }
+      .description_b {
+        font-size: 14px;
+        width: 90%;
+    }
+
+    .btn-explore_b {
+        padding: 12px 30px;
+        font-size: 14px;
+    }
+
+    .main-image_b,
+    .main-image_b img {
+        height: 280px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .side-image_b,
+    .side-image_b img {
+        height: 200px !important;
+    }
+
+    .image-info_b {
+        width: 70%;
+        padding: 16px 20px;
+    }
+}
+
+/* شاشات أصغر من 420px */
+@media (max-width: 420px) {
+
+    .main-title_b {
+        font-size: 22px;
+    }
+
+    .description_b {
+        font-size: 14px;
+    }
+
+    .side-image_b,
+    .side-image_b img {
+        height: 180px !important;
+    }
+
+    .carousel-indicators_b {
+        gap: 8px;
+    }
+}
+
+/* ===  ===== */
 
 /* ===== Products Section ===== */
 /* .products-section {

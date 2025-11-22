@@ -1523,38 +1523,55 @@ img {
 /*  توزيع  */
 .item1 {
     grid-area: 1 / 1 / 5 / 2;
+    background-color: #666666;
 }
 
 .item2 {
     grid-area: 5 / 1 / 9 / 3;
+    background-color: #666666;
+
 }
 
 .item3 {
     grid-area: 2 / 2 / 5 / 6;
+    background-color: #666666;
+
 }
 
 .item4 {
     grid-area: 1 / 11 / 6 / 13;
+    background-color: #666666;
+
 }
 
 .item5 {
     grid-area: 3 / 6 / 7 / 8;
+    background-color: #666666;
+
 }
 
 .item6 {
     grid-area: 5 / 3 / 8 / 6;
+    background-color: #666666;
+
 }
 
 .item7 {
     grid-area: 2 / 8 / 6 / 11;
+    background-color: #666666;
+
 }
 
 .item8 {
     grid-area: 6 / 8 / 9 / 10;
+    background-color: #666666;
+
 }
 
 .item9 {
     grid-area: 6 / 10 / 8 / 12;
+    background-color: #666666;
+
 }
 
 /* 🔵 تابلت */

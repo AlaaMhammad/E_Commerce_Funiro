@@ -690,6 +690,12 @@ img {
     background-color: #b88f2f77;
 }
 
+@media (max-width: 768px) {
+    .top_img {
+        display: none !important;
+    }
+}
+
 /* .carousel-track_b {
     position: relative;
     width: 100%;
